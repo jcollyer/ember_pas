@@ -1,4 +1,4 @@
-<a href="http://plantaseedafrica.org">plantaseedafrica.org</a>
+www.plantaseedafrica.org
 
 
 Using Ember.js
