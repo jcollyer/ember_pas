@@ -101,7 +101,7 @@ ol {
 #home_action_title {
   font-size: 240%;
   color: #d97b19;
-  text-shadow: 0 1px 0 #aaaaaa, 0 -1px 0 #111111; }
+  text-shadow: 0 1px 0 #aaa, 0 -1px 0 #111; }
 
 #home_action_slogan {
   font-size: 90%; }
@@ -111,7 +111,7 @@ ol {
   position: relative;
   height: 80px;
   width: 100%;
-  box-shadow: -5px 0 15px #333333 inset; }
+  box-shadow: -5px 0 15px #333 inset; }
 
 #flash_thing {
   position: absolute;
@@ -269,7 +269,7 @@ ol {
   z-index: 2; }
 
 .pg1 {
-  border-left: 1px solid #222222;
+  border-left: 1px solid #222;
   box-shadow: 1px 0 0px #af6632 inset;
   width: 30px;
   height: 200px;
@@ -293,7 +293,7 @@ ol {
   background: white;
   top: 0px;
   left: -100px;
-  border-right: 1px solid #111111; }
+  border-right: 1px solid #111; }
 
 .pg2 {
   left: 25%;
@@ -341,7 +341,7 @@ ol {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#69533b', EndColorStr='#6b320c'); }
 
 .pg5 {
-  border-left: 1px solid #222222;
+  border-left: 1px solid #222;
   box-shadow: 1px 0 0px #af6632 inset;
   position: absolute;
   right: 0px;
@@ -367,11 +367,11 @@ ol {
   background: white;
   top: 0px;
   right: -100px;
-  border-left: 1px solid #111111; }
+  border-left: 1px solid #111; }
 
 .board1 {
-  border-top: 1px solid #222222;
-  border-bottom: 1px solid #222222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
   box-shadow: 0 1px 0 #c8753b inset, 0 -1px 0 #af6632 inset;
   border-radius: 2px;
   position: relative;
@@ -423,8 +423,8 @@ ol {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#181919', EndColorStr='#464646'); }
 
 .board2 {
-  border-top: 1px solid #222222;
-  border-bottom: 1px solid #222222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
   box-shadow: 0 1px 0 #af6632 inset, 0 -1px 0 #af6632 inset;
   border-radius: 2px;
   left: 5%;
@@ -475,8 +475,8 @@ ol {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#181919', EndColorStr='#464646'); }
 
 .board3 {
-  border-top: 1px solid #111111;
-  border-bottom: 1px solid #111111;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
   box-shadow: 0 1px 0 #97582a inset, 0 -1px 0 #97582a inset;
   border-radius: 2px;
   left: 10%;
@@ -551,8 +551,8 @@ ol {
   padding-right: 3%;
   padding-left: 3%;
   background: rgba(100, 100, 100, 0.1);
-  border: 1px solid #cccccc;
-  box-shadow: 0 1px 0 white inset; }
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 #fff inset; }
 
 #colomn_right {
   float: left;
@@ -560,8 +560,8 @@ ol {
   margin-left: 2%;
   padding-left: 0px;
   background: rgba(100, 100, 100, 0.1);
-  border: 1px solid #cccccc;
-  box-shadow: 0 1px 0 white inset; }
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 #fff inset; }
 
 .blackback {
   position: absolute; }
@@ -613,7 +613,7 @@ section:after {
   background: #f0f0f0;
   margin: 15px auto;
   padding: 15px;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #fff;
   box-shadow: 0px 0px 4px #555555;
   background: #ffffff;
   border-bottom-right-radius: 15px;
@@ -625,9 +625,9 @@ section:after {
   position: relative;
   padding: 15px 15px 15px 30px;
   background: rgba(100, 100, 100, 0.2);
-  border-top: 1px solid #888888;
-  border-bottom: 1px solid #888888;
-  box-shadow: 0 1px 0 white inset; }
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  box-shadow: 0 1px 0 #fff inset; }
 
 article {
   width: 85%;
@@ -646,8 +646,8 @@ article {
 .blackBox {
   background: url(../img/back3.jpg);
   padding: 1px 31% 13px 10%;
-  border-bottom: 1px solid #888888;
-  box-shadow: 0 0px 13px #666666; }
+  border-bottom: 1px solid #888;
+  box-shadow: 0 0px 13px #666; }
 
 .infoBox {
   min-height: 40px;
@@ -662,10 +662,10 @@ article {
   padding: 0px 20px 20px 20px; }
 
 .picFrame, .thinPicFrame {
-  border-top: 1px solid #cccccc;
-  border-right: 1px solid #666666;
-  border-left: 1px solid #666666;
-  border-bottom: 1px solid #666666;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #666;
+  border-left: 1px solid #666;
+  border-bottom: 1px solid #666;
   position: relative;
   box-shadow: 0 0 2px #444444, 0px -1px 0 #999999;
   margin: 3px; }
@@ -677,19 +677,18 @@ article {
 
 .map {
   margin-top: 55px;
-  border: 2px solid #888888;
-  box-shadow: 0px 0px 7px #333333; }
+  border: 2px solid #888;
+  box-shadow: 0px 0px 7px #333; }
 
 /*home*/
 .article_home {
-  width: 85%;
+  width: 100%;
   margin: 20px auto;
-  padding: 10px 1px 10px 1px; }
+  padding: 10px 20px 10px 20px; }
 
 .article_home:hover {
   background: #f0f0f0;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px dotted #888888; }
+  background-color: rgba(255, 255, 255, 0.4); }
 
 .articl_home p {
   color: #444; }
@@ -717,11 +716,11 @@ article {
 .sponsorCostTable {
   width: 80%;
   margin: 50px auto;
-  border: 1px solid #999999; }
+  border: 1px solid #999; }
 
 .sponsorCostTable td {
   text-align: center;
-  border-bottom: 1px solid #999999; }
+  border-bottom: 1px solid #999; }
 
 .draw1 {
   width: 240px;
@@ -755,13 +754,13 @@ article {
   height: 400px;
   padding: 20px;
   background: #ccc;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   border-radius: 7px; }
 
 #contactFormTable td {
   color: #546a8f;
   font-size: 130%;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   vertical-align: top; }
 
 /******************/
@@ -848,28 +847,28 @@ h3 {
   font-size: 160%;
   padding: 10px;
   font-family: 'Gloria Hallelujah';
-  text-shadow: 0px 1px 0px white; }
+  text-shadow: 0px 1px 0px #ffffff; }
 
 h4 {
   color: #555;
   font-size: 300%;
   padding: 15px;
   line-height: 0.8em;
-  text-shadow: 0px 1px 0px white; }
+  text-shadow: 0px 1px 0px #ffffff; }
 
 h5 {
   color: #546A8F;
   font-size: 150%;
   margin: 3px 3px 0 3px;
   line-height: 1.7em;
-  font-family: "Gloria Hallelujah", cursive;
-  text-shadow: 0 1px 0 white; }
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 0 1px 0 #ffffff; }
 
 h6 {
   color: #c9520e;
   font-size: 200%;
   padding: 15px;
-  text-shadow: 0px 1px 0px white; }
+  text-shadow: 0px 1px 0px #ffffff; }
 
 .internalLink {
   margin-top: -40px; }
@@ -924,7 +923,7 @@ h6 {
 .brightText3 {
   font-size: 130%;
   color: #888;
-  text-shadow: 1px 1px 1px white; }
+  text-shadow: 1px 1px 1px #fff; }
 
 .whiteText {
   color: white;
@@ -960,7 +959,7 @@ h6 {
   text-shadow: 0 1px 0 #f0f0f0;
   color: #3b3b3b;
   font-size: 17px;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer; }
@@ -1003,15 +1002,15 @@ h6 {
   background-position: 0 -184px; }
 
 .headerStyle {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   color: #546a8f;
   font-size: 240%; }
 
 .pageHeaderStyle {
   color: #fff;
   font-size: 260%;
-  text-shadow: 2px 1px 1px #222222;
-  font-family: "Gloria Hallelujah", cursive;
+  text-shadow: 2px 1px 1px #222;
+  font-family: 'Gloria Hallelujah', cursive;
   position: relative;
   z-index: 99; }
 
@@ -1019,13 +1018,13 @@ h6 {
   color: #fff;
   padding: 15px;
   font-size: 460%;
-  text-shadow: 2px 1px 1px #222222;
-  font-family: "Gloria Hallelujah", cursive; }
+  text-shadow: 2px 1px 1px #222;
+  font-family: 'Gloria Hallelujah', cursive; }
 
 .gloriaHallelujah {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   font-size: 150%;
-  text-shadow: 0px 0px 1px white; }
+  text-shadow: 0px 0px 1px #fff; }
 
 .picsWithCaptions td {
   text-align: center; }
@@ -1070,7 +1069,7 @@ a.button:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px 0 #fecf6e inset; }
 
 .button:hover {
-  box-shadow: 0 0 2px #555555, 0 0 1px #eeeeee inset;
+  box-shadow: 0 0 2px #555, 0 0 1px #eeeeee inset;
   cursor: pointer;
   color: #fff;
   background-color: #fca739;
@@ -1166,7 +1165,7 @@ font-family: 'Gloria Hallelujah', cursive;
 
 #main_nav a {
   text-decoration: none;
-  font-family: "Gloria Hallelujah", cursive; }
+  font-family: 'Gloria Hallelujah', cursive; }
 
 #main_nav ul {
   list-style-type: none; }
@@ -1201,7 +1200,7 @@ font-family: 'Gloria Hallelujah', cursive;
   width: 160px;
   margin-top: -31px;
   left: 25px;
-  box-shadow: 0 0 3px #333333;
+  box-shadow: 0 0 3px #333;
   position: absolute;
   z-index: 9;
   border-bottom-right-radius: 3px;

@@ -2,164 +2,40 @@ var App = Ember.Application.create();
 
 //Router
 App.Router.map(function() {
-	this.resource('tables', function() {
-		this.resource('table', {path:':ta ble_id'});
-	});
+  this.resource('index');
+  this.resource('community');
+  this.resource('news');
+  this.resource('donate');
+  this.resource('contact');
+  this.resource('store');
+  
+  this.resource('newsletters');
+  
+  //this.route("newsletters", { path: "/newsletters" });
 });
 
-App.TablesRoute = Ember.Route.extend({
-	model: function() {
-		return App.Table.find();
-	}
-});
-
-App.ApplicationRoute = Ember.Route.extend({
-	setupController: function(){
-		this.controllerFor('food').set('model', App.Food.find() );
-		
-	}
+App.NewslettersRoute = Ember.Route.extend({
+  model: function() {
+    return App.Newsletter.find();
+  }
 });
 
 //Controller
-App.TablesController = Ember.ArrayController.extend();
+App.NewslettersController = Ember.ArrayController.extend();
 
-App.FoodController = Ember.ArrayController.extend({
-	addFood: function(food) {
-		var table = this.controllerFor('table').get('model'),
-				tabItems = table.get('tab.tabItems');
-		tabItems.createRecord({
-			food: food,
-			cents: food.get('cents')
-		});
-	}
-});
-
-App.TabController = Ember.ObjectController.extend();
-
-//View Helpers
-Ember.Handlebars.registerBoundHelper('money', function(value){
-	
-	return (value % 100 === 0 ?
-					value / 100 + '.00' :
-					parseInt(value / 100, 10) + '.' +value % 100);
-});
-
-
-// Models
+//Models
 App.Store = DS.Store.extend({
   revision: 11,
   adapter: 'DS.FixtureAdapter'
 });
 
-App.Table = DS.Model.extend({
-  tab: DS.belongsTo('App.Tab')
-});
+App.Newsletter = DS.Model.extend();
 
-App.Tab = DS.Model.extend({
-  tabItems: DS.hasMany('App.TabItem'),
-  cents: function() {
-  	return this.get('tabItems').getEach('cents').reduce(function(accum, item) {
-  		return accum + item;
-  	}, 0);
-  }.property('tabItems.@each.cents')
-});
-
-App.TabItem = DS.Model.extend({
-  cents: DS.attr('number'),
-  food: DS.belongsTo('App.Food')
-});
-
-App.Food = DS.Model.extend({
-  name: DS.attr('string'),
-  imageUrl: DS.attr('string'),
-  cents: DS.attr('number')
-});
-
-App.Table.FIXTURES = [{
-  id: 1,
-  tab: 1
-}, {
-  id: 2,
-  tab: 2
-}, {
-  id: 3,
-  tab: 3
-}, {
-  id: 4,
-  tab: 4
-}, {
-  id: 5,
-  tab: 5
-}, {
-  id: 6,
-  tab: 6
-}];
-
-App.Tab.FIXTURES = [{
-  id: 1,
-  tabItems: []
-}, {
-  id: 2,
-  tabItems: []
-}, {
-  id: 3,
-  tabItems: []
-}, {
-  id: 4,
-  tabItems: [400, 401, 402, 403, 404]
-}, {
-  id: 5,
-  tabItems: []
-}, {
-  id: 6,
-  tabItems: []
-}];
-
-App.TabItem.FIXTURES = [{
-  id: 400,
-  cents: 1500,
-  food: 1
-}, {
-  id: 401,
-  cents: 300,
-  food: 2
-}, {
-  id: 402,
-  cents: 700,
-  food: 3
-}, {
-  id: 403,
-  cents: 950,
-  food: 4
-}, {
-  id: 404,
-  cents: 2000,
-  food: 5
-}];
-
-App.Food.FIXTURES = [{
-  id: 1,
-  name: 'Pizza',
-  imageUrl: 'img/pizza.png',
-  cents: 1500
-}, {
-  id: 2,
-  name: 'Pancakes',
-  imageUrl: 'img/pancakes.png',
-  cents: 300
-}, {
-  id: 3,
-  name: 'Fries',
-  imageUrl: 'img/fries.png',
-  cents: 700
-}, {
-  id: 4,
-  name: 'Hot Dog',
-  imageUrl: 'img/hotdog.png',
-  cents: 950
-}, {
-  id: 5,
-  name: 'Birthday Cake',
-  imageUrl: 'img/birthdaycake.png',
-  cents: 2000
-}];
+App.Newsletter.FIXTURES = [
+{id: 1, name: "bill" },
+{id: 2, name: "joe"},
+{id: 3, name: "sue"},
+{id: 4, name: "rick" },
+{id: 5, name: "lana" }
+]
+  

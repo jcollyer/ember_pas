@@ -697,14 +697,14 @@ article {
 
 /*home*/
 .article_home {
-  width: 85%;
+  width: 100%;
   margin: 20px auto;
-  padding: 10px 1px 10px 1px; }
+  padding: 10px 20px 10px 20px; }
 
 .article_home:hover {
   background: #f0f0f0;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px dotted #888; }
+  background-color: rgba(255, 255, 255, 0.4); 
+}
 
 .articl_home p {
   color: #444; }
